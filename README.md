@@ -42,13 +42,14 @@
    ![excluirDados](https://user-images.githubusercontent.com/65837228/167268774-179700c6-fd48-4f22-b5b0-7cb34ea8f4f9.png)
    <br> 
    <p> Se o usuário quiser excluir todos os dados! </p>
-   ![excluirDados2](https://user-images.githubusercontent.com/65837228/167268776-a21a624c-2edc-406d-b31d-e87f95347eb1.png)
-    <br>
      
-   <h2> Se o usuário quiser <b>sair<b> do sistema </h2>
+  ![excluirDados2](https://user-images.githubusercontent.com/65837228/167269207-09a193f4-62f7-43a2-93b0-c9f065780493.png)
+  
+  <h2> Se o usuário quiser <b>sair<b> do sistema </h2>
    <br>
-   ![sairDoSistema](https://user-images.githubusercontent.com/65837228/167268961-fe1d620f-7390-48d2-b2dd-9cc8a500759c.png)
-   <br>
+   
+   ![sairDoSistema](https://user-images.githubusercontent.com/65837228/167269215-7e13899a-fa7e-40ab-bbcf-6ab954b30993.png)
+
    <p> Mais ou menos resumindo como o sistema funciona! Ainda irei fazer algumas alterações</p>
 
      
