@@ -234,7 +234,7 @@ int main(){
                 printf("\n Alterar Nome do Paciente para:  ");
                 fflush(stdin);
                 scanf("%[^\n]s", &CA [i].nome);
-                printf("\n Novo Nome do Paciente: %s\n\n\t\t ");
+                printf("\n Novo Nome do Paciente: %s\n\n\t\t ", CA [i].nome);
                 system("pause");
             }
             break;
@@ -244,7 +244,7 @@ int main(){
                 printf("\nAlterar CPF do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].CPF);
-                printf("\n O Novo CPF do Paciente: %s\n\n\t\t");
+                printf("\n O Novo CPF do Paciente: %s\n\n\t\t", CA [i].CPF);
                 system("pause");
             }
             break;
@@ -255,7 +255,7 @@ int main(){
                 printf("\nAlterar Telefone do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].telefone);
-                printf("\n O Novo Telefone do Paciente: %s\n\n\t\t");
+                printf("\n O Novo Telefone do Paciente: %s\n\n\t\t", CA [i].telefone);
                 system("pause");
             }
             break;
@@ -266,7 +266,7 @@ int main(){
                 printf("\nAlterar o Nome da Rua do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].nomeDaRua);
-                printf("\n O Novo Nome da Rua do Paciente: %s\n\n\t\t");
+                printf("\n O Novo Nome da Rua do Paciente: %s\n\n\t\t", CA [i].nomeDaRua);
                 system("pause");
             }
             break;
@@ -277,7 +277,7 @@ int main(){
                 printf("\nAlterar o Numero da Rua do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].numeroDaRua);
-                printf("\n O Novo Numero da Rua do Paciente: %s\n\n\t\t");
+                printf("\n O Novo Numero da Rua do Paciente: %s\n\n\t\t", CA [i].numeroDaRua);
                 system("pause");
             }
             break;
@@ -287,7 +287,7 @@ int main(){
                 printf("\nAlterar o Bairro do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].bairro);
-                printf("\n O Novo Nome do Bairro do Paciente: %s\n\n\t\t");
+                printf("\n O Novo Nome do Bairro do Paciente: %s\n\n\t\t", CA [i].bairro);
                 system("pause");
             }
             break;
@@ -297,7 +297,7 @@ int main(){
                 printf("\nAlterar a Cidade do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].cidade);
-                printf("\n O Novo Nome da Cidade do Paciente: %s\n\n\t\t");
+                printf("\n O Novo Nome da Cidade do Paciente: %s\n\n\t\t", CA [i].cidade);
                 system("pause");
             }
             break;
@@ -307,7 +307,7 @@ int main(){
                 printf("\nAlterar o Estado do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].estado);
-                printf("\n O Novo Nome do Estado do Paciente: %s\n\n\t\t");
+                printf("\n O Novo Nome do Estado do Paciente: %s\n\n\t\t", CA [i].estado);
                 system("pause");
             }
             break;
@@ -317,7 +317,7 @@ int main(){
                 printf("\nAlterar o CEP do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].CEP);
-                printf("\n O Novo CEP do Paciente: %s\n\n\t\t");
+                printf("\n O Novo CEP do Paciente: %s\n\n\t\t", CA [i].CEP);
                 system("pause");
             }
             break;
@@ -327,7 +327,7 @@ int main(){
                 printf("\nAlterar a Data de Nascimento do Paciente para(DD/MM/AAA):   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].dataDeNascimento);
-                printf("\n A Nova Data de Nascimento do Paciente: %s\n\n\t\t");
+                printf("\n A Nova Data de Nascimento do Paciente: %s\n\n\t\t", CA [i].dataDeNascimento);
                 system("pause");
             }
             break;
@@ -337,7 +337,7 @@ int main(){
                 printf("\nAlterar o Email do Paciente para:   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].email);
-                printf("\n O nome Email do Paciente: %s\n\n\t\t");
+                printf("\n O nome Email do Paciente: %s\n\n\t\t", CA [i].email);
                 system("pause");
             }
             break;
@@ -347,7 +347,7 @@ int main(){
                 printf("\nAlterar a Data do Diagnostico do Paciente para(DD/MM/AAA):   ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].dataDoDiagnostico);
-                printf("\n A Nova Data do Diagnostico do Paciente: %s\n\n\t\t");
+                printf("\n A Nova Data do Diagnostico do Paciente: %s\n\n\t\t", CA [i].dataDoDiagnostico);
                 system("pause");
             }
             break;
@@ -357,7 +357,7 @@ int main(){
                 printf("\nAlterar a Comorbidade do Paciente para:  ");
                  fflush(stdin);
                 scanf ("%[^\n]s", &CA [i].comorbidade);
-                printf("\n A Nova Comorbidade do Paciente: %s\n\n\t\t");
+                printf("\n A Nova Comorbidade do Paciente: %s\n\n\t\t", CA [i].comorbidade);
                 system("pause");
             }
             break;
