@@ -7,62 +7,65 @@
 
 int main(){
 
-           /// delarando variaveis do sistema
-         int opcaoPrincipal, opcaoAlterar, opcaoDesejaSairDoSistema, opcaoExcluir, i, quantidadeCadastros;
+      // delarando variaveis do sistema
+      int opcaoPrincipal, opcaoAlterar, opcaoDesejaSairDoSistema, opcaoExcluir, i, quantidadeCadastros;
 
-         //// declarando variaveis para senha
-        char c, login[20], senha[20];
-        int a=10, b=0, verifica_senha=0, quantidade=0, option=1;
+      // declarando variaveis para senha
+      char c, login[20], senha[20];
+      int a=10, b=0, verifica_senha=0, quantidade=0, option=1;
 
 
       struct dados {
             char nome[100], nomeDaRua[100], bairro[100], cidade[100], estado[100], email[100], CPF[100], telefone[100],
             numeroDaRua[100], CEP[100], dataDeNascimento[100], dataDoDiagnostico[100], comorbidade[100];
      }
+        CA[600];
 
-      CA[600];
-
-          /// parte senha
+      // parte senha
         while(verifica_senha==0){
             printf("\n\t\tINGRIDCS\n");
-             printf("\n\t  Sistema de Cadastro\n\n");
-             printf("\n\t  Login: ");
+            printf("\n\t  Sistema de Cadastro\n\n");
+            printf("\n\t  Login: ");
             gets(login);
             printf("\n\t  Senha: ");
+		
         while((c=getch())!=13){ //13 é o valor de ENTER
             senha[b]=c;
             b++;
             printf("*");  //senha imprimindo o * Anterisco
             }
+		
             senha[b]='\0';
             b=0;
             system("cls");
 
-           a= strcmp(senha,"12345"); // senha para entrar no sistema, pode ser alterada
-           if(a==0){printf("\t  SENHA CORRETA");
-           system("color 0a");
-           verifica_senha=1;Beep(1500,2000);
-           } else{ printf("\t  SENHA INCORRETA\n");
-           system("color 0c");
-           Beep(1200,200);}
-           printf("\n");
-     }
+            a= strcmp(senha,"12345"); // senha para entrar no sistema, pode ser alterada
+            if(a==0){printf("\t  SENHA CORRETA");
+            system("color 0a");
+            verifica_senha=1;Beep(1500,2000);
+            } else{ printf("\t  SENHA INCORRETA\n");
+            system("color 0c");
+            Beep(1200,200);}
+            printf("\n");
+        }
 
 
-        /////// Parte principal
+	
+	
+    /////////////////// PARTE PRINCIPAL ///////////////////////
 
              //dando cor ao sistema
             while(opcaoPrincipal!=6){
             while(opcaoDesejaSairDoSistema!=1){
-                //system("color F2");
+                system("color F2");
 
 
 
 
-                printf("\n\nBem vindo(a) %s\n", &login);
+        printf("\n\nBem vindo(a) %s\n", &login);
 
-	    printf("\n   #----------------- AREA DE PACIENTES  ------------------# ");
-	    printf("\n   |                                                       | ");
+        printf("\n   #----------------- AREA DE PACIENTES  ------------------# ");
+	printf("\n   |                                                       | ");
         printf("\n   |                                                       | ");
         printf("\n   |                    MENU PRINCIPAL                     | ");
         printf("\n   |                                                       | ");
@@ -79,100 +82,97 @@ int main(){
 
                 system("cls");
 
-
-
-	     ///// OPÇOES DO MENU
+		    
+    /////////////////// OPÇOES DO MENU //////////////////////
 
 
 	    switch(opcaoPrincipal){
-           /// CASE 1 - SE OPTAR POR CADASTRO
+           // CASE 1 - SE OPTAR POR CADASTRO
 	     case 1:
 
              printf("Quantos cadastros de pacientes voce deseja realizar?\n");;
              scanf("%d", &quantidadeCadastros);
              system("cls");
 
+             for(i=1;i<=quantidadeCadastros;i++){
+             system("cls");
 
-            for(i=1;i<=quantidadeCadastros;i++){
-            system("cls");
-
-              printf("\nDigite o nome do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].nome);
-
-
-              printf("\nDigite o CPF do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].CPF);
+             printf("\nDigite o nome do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].nome);
 
 
-              printf("\nDigite o telefone do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].telefone);
+             printf("\nDigite o CPF do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].CPF);
 
 
-              printf("\n");
-
-              printf("\nDigite o nome da rua do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].nomeDaRua);
+             printf("\nDigite o telefone do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].telefone);
 
 
-              printf("\nDigite o numero da rua do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].numeroDaRua);
+             printf("\n");
+
+             printf("\nDigite o nome da rua do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].nomeDaRua);
 
 
-              printf("\nDigite o bairro do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].bairro);
+             printf("\nDigite o numero da rua do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].numeroDaRua);
 
 
-               printf("\nDigite o cidade do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].cidade);
+             printf("\nDigite o bairro do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].bairro);
 
 
-              printf("\nDigite o estado do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].estado);
+             printf("\nDigite o cidade do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].cidade);
 
 
-              printf("\nDigite CEP Do Paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].CEP);
+             printf("\nDigite o estado do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].estado);
 
 
-              printf("\nDigite o email do paciente: ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].email);
+             printf("\nDigite CEP Do Paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].CEP);
 
 
+             printf("\nDigite o email do paciente: ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].email);
 
-              printf("\nDigite a data De nascimento do paciente (DD/MM/AAAA): ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].dataDeNascimento);
+
+             printf("\nDigite a data De nascimento do paciente (DD/MM/AAAA): ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].dataDeNascimento);
 
 
 
-              printf("\nDigite a data do diagnostico do paciente (DD/MM/AAAA): ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].dataDoDiagnostico);
+             printf("\nDigite a data do diagnostico do paciente (DD/MM/AAAA): ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].dataDoDiagnostico);
 
 
-              printf("\nO Paciente possui alguma comorbidade?Se sim(quais): ");
-              fflush(stdin);
-              scanf("%[^\n]s", CA[i].comorbidade);
-              printf("\n\n\n\t");
-              system("pause");
-              system("cls");
+             printf("\nO Paciente possui alguma comorbidade?Se sim(quais): ");
+             fflush(stdin);
+             scanf("%[^\n]s", CA[i].comorbidade);
+             printf("\n\n\n\t");
+             system("pause");
+             system("cls");
             }
             break;
 
 
 
 
-            /// CASO 2 QUANDO FOR EXBIR OS DADOS
+           // CASO 2 QUANDO FOR EXBIR OS DADOS
 
          case 2:
             system("cls");
@@ -544,10 +544,7 @@ int main(){
             }
             break;
 
-
-
-
-
+                // SAIR DO SISTEMA OU NÃO
                 case 5:
                     system("cls");
                     printf("Voce Deseja Sair do Sistema?\n\n");
