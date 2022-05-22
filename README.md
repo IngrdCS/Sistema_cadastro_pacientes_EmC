@@ -1,5 +1,5 @@
 <h1> Sistema cadastro de pacientes em C.</h1>
-<p>Cadastra, consulta, alterar e exclui dados.</p>
+<p>Cadastra, consulta, altera e exclui dados.</p>
 
   
 <p> Possui verificação de senha.</p
